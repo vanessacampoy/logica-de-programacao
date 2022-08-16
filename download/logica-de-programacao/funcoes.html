@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funções</title>
+</head>
+
+<body>
+
+  <script>
+    // function fazPegadinha() {
+    //     alert("Olá");
+    //     alert("amiga!");
+    //     alert("Tá");
+    //     alert("bastante");
+    //     alert("entediada?");
+    //     alert("Em ficar");
+    //     alert("Clicando em");
+    //     alert("Ok");
+    //     alert("né?");
+    // }
+
+    // fazPegadinha()
+   
+
+    function pulaLinha() {
+      document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function diferencaIdade(idades) {
+      document.write(idades)
+    }
+
+    var idade1 = 26
+    var idade2 = 23
+
+    diferencaIdade(`Nossa diferença de idade é ${idade1 - idade2} anos`)
+    pulaLinha()
+
+
+    function mediaFilhos(nascimento) {
+      document.write(nascimento)
+    }
+
+    var quantidadeAnos = 522
+    var tempo = 28
+    var calculo = quantidadeAnos / tempo
+
+    mediaFilhos(`São ${Math.round(calculo)} gerações.`)
+    pulaLinha()
+
+
+
+    function calculaIMC(calculoPeso) {
+      document.write(calculoPeso)
+    }
+
+    var peso = 76
+    var altura = 1.86
+    var imc = peso / (altura * altura)
+
+    calculaIMC(`O seu IMC é de: ${imc}`)
+    pulaLinha()
+
+
+    function calculaIMC2(altura, peso) {
+      return peso / (altura * altura)
+    }
+    var peso = 76
+    var altura = 1.78
+    var imc = peso / (altura * altura)
+
+    document.write(imc)
+    pulaLinha()
+
+
+    function somar(num1, num2) {
+      document.write(num1, num2)
+    }
+    var num1 = 23
+    var num2 = 45
+    var soma = num1 + num2
+    somar(`A soma é de: ${soma}`)
+    pulaLinha()
+
+
+  
+
+  </script>
+</body>
+
+</html>

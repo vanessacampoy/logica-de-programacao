@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Senha</title>
+</head>
+
+<body>
+  <meta charset="UTF-8">
+  
+  <script>
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var todasTentativas = 3
+    var tentativas = 1
+
+    while (tentativas <= todasTentativas) {
+
+      var loginInformado = prompt("Informe seu login");
+      var senhaInformada = prompt("Informe sua senha");
+
+      if (loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
+
+        alert("Bem-vindo ao sistema " + loginInformado);
+        tentativas = todasTentativas
+      } else {
+        if (todasTentativas == 3) {
+          alert("Excedido número de tentativas!")
+        } else {
+          alert("Login inválido. Tente novamente");
+        }
+      }
+      tentativas = todasTentativas = + 1
+    }
+
+
+  </script>
+</body>
+
+</html>
